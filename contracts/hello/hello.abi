@@ -13,6 +13,13 @@
         "amount": "uint64"
       }
     },{
+      "name": "sayhello",
+      "base": "",
+      "fields": {
+        "from": "account_name",
+        "to": "account_name",
+      }
+    },{
       "name": "account",
       "base": "",
       "fields": {
@@ -24,6 +31,9 @@
   "actions": [{
       "action_name": "transfer",
       "type": "transfer"
+    },{
+      "action_name": "sayhello",
+      "type": "sayhello"
     }
   ],
   "tables": [{
