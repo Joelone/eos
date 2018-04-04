@@ -5,7 +5,8 @@
 #include <eoslib/eos.hpp>
 #include <eoslib/db.hpp>
 
-
+// @abi action sayhello
+// @abi table
 struct sayhello {
   /**
   * account to transfer from
