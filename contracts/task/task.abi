@@ -1,0 +1,38 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "task_info",
+      "base": "",
+      "fields": {
+        "desc": "string",
+        "bounty": "uint64",
+        "starttime": "uint64",
+        "endtime": "uint64"
+      }
+    },{
+      "name": "task",
+      "base": "",
+      "fields": {
+        "name": "string",
+        "info": "task_info"
+      }
+    }
+  ],
+  "actions": [{
+      "action_name": "starttask",
+      "type": "task"
+    }
+  ],
+  "tables": [{
+      "table_name": "task",
+      "index_type": "str",
+      "key_names": [
+        "name"
+      ],
+      "key_types": [
+        "string"
+      ],
+      "type": "task"
+    }
+  ]
+}
